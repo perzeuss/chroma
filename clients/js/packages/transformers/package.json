@@ -1,6 +1,6 @@
 {
   "name": "@chromadb/transformers",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Hugging Face transformers embeddings for chroma",
   "keywords": [],
   "author": "",
@@ -35,7 +35,7 @@
     "node": ">=14.17.0"
   },
   "dependencies": {
-    "@chromadb/core": "^2.0.0"
+    "@chromadb/core": "^2.0.1"
   },
   "peerDependencies": {
     "@xenova/transformers": "^2.0.0"
