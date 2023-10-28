@@ -1,4 +1,4 @@
-import {IEmbeddingFunction} from "./IEmbeddingFunction";
+import { IEmbeddingFunction } from "@chromadb/core";
 
 let OpenAIApi: any;
 let openAiVersion = null;
@@ -77,7 +77,7 @@ export class OpenAIEmbeddingFunction implements IEmbeddingFunction {
     private model: string;
     private openaiApi: OpenAIAPI;
 
-    constructor({openai_api_key, openai_model, openai_organization_id}: {
+    constructor({ openai_api_key, openai_model, openai_organization_id }: {
         openai_api_key: string,
         openai_model?: string,
         openai_organization_id?: string
@@ -87,7 +87,7 @@ export class OpenAIEmbeddingFunction implements IEmbeddingFunction {
             OpenAIApi = require("openai");
             let version = null;
             try {
-                const {VERSION} = require('openai/version');
+                const { VERSION } = require('openai/version');
                 version = VERSION;
             } catch (e) {
                 version = "3.x";

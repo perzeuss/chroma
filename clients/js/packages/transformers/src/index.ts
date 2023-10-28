@@ -1,6 +1,5 @@
-import { importOptionalModule } from "../utils";
-import { IEmbeddingFunction } from "./IEmbeddingFunction";
-
+import { IEmbeddingFunction } from "@chromadb/core";
+import { importOptionalModule } from "./utils";
 // Dynamically import module
 let TransformersApi: Promise<any>;
 

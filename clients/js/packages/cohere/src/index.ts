@@ -1,4 +1,4 @@
-import { IEmbeddingFunction } from "./IEmbeddingFunction";
+import { IEmbeddingFunction } from "@chromadb/core";
 
 let CohereAiApi: any;
 

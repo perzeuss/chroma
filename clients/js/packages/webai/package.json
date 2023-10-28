@@ -1,0 +1,62 @@
+{
+  "name": "@chromadb/webai",
+  "version": "0.1.0",
+  "description": "WebAI embeddings for chroma",
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/cjs/webai.cjs",
+  "module": "dist/webai.legacy-esm.js",
+  "browser": "dist/webai.browser.mjs",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/webai.d.ts",
+        "default": "./dist/webai.mjs"
+      },
+      "require": {
+        "types": "./dist/cjs/webai.d.cts",
+        "default": "./dist/cjs/webai.cjs"
+      }
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsup",
+    "postbuild": "attw --pack .",
+    "prettier": "prettier --write ."
+  },
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "dependencies": {
+    "@chromadb/core": "*"
+  },  
+  "peerDependencies": {
+    "@visheratin/web-ai": "^1.0.0",
+    "@visheratin/web-ai-node": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@visheratin/web-ai": {
+      "optional": true
+    },
+    "@visheratin/web-ai-node": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "prettier": "2.8.7",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.0.4"
+  }
+}

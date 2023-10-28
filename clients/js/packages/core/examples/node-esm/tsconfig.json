@@ -1,0 +1,22 @@
+{
+  "include": [
+    "index.ts"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "module": "ESNext",
+    "lib": ["ES2017", "DOM"],
+    "sourceMap": true,
+    "target": "ES2017",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    "stripInternal": true,
+    "baseUrl": "./",
+    "paths": {
+      "@chromadb/core": ["../../src/index.ts"],
+      "@chromadb/openai": ["../../../openai/src/index.ts"],
+    }
+  }
+}
