@@ -1,6 +1,6 @@
 {
   "name": "@chromadb/cohere",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "Cohere embeddings for chroma",
   "keywords": [],
   "author": "",
@@ -35,7 +35,7 @@
     "node": ">=14.17.0"
   },
   "dependencies": {
-    "@chromadb/core": "*"
+    "@chromadb/core": "^2.0.0"
   },
   "peerDependencies": {
     "cohere-ai": "^5.0.0 || ^6.0.0"

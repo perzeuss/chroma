@@ -1,6 +1,6 @@
 {
   "name": "@chromadb/webai",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "description": "WebAI embeddings for chroma",
   "keywords": [],
   "author": "",
@@ -35,8 +35,8 @@
     "node": ">=14.17.0"
   },
   "dependencies": {
-    "@chromadb/core": "*"
-  },  
+    "@chromadb/core": "^2.0.0"
+  },
   "peerDependencies": {
     "@visheratin/web-ai": "^1.0.0",
     "@visheratin/web-ai-node": "^1.0.0"

@@ -1,9 +1,12 @@
 {
   "$schema": "node_modules/lerna/schemas/lerna-schema.json",
-  "version": "0.0.0",
-  "packages": ["packages/*"],
+  "version": "2.0.0",
+  "packages": [
+    "packages/*"
+  ],
   "command": {
     "publish": {
-      "registry": "http://localhost:4873/"}
+      "registry": "http://localhost:4873/"
+    }
   }
 }

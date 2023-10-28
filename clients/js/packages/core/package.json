@@ -1,6 +1,6 @@
 {
   "name": "@chromadb/core",
-  "version": "1.5.16",
+  "version": "2.0.0",
   "description": "A JavaScript interface for chroma",
   "keywords": [],
   "author": "",
